@@ -5,6 +5,9 @@ VERSION="0.4.0"
 PROTECTED_MODE="no"
 
 export GO15VENDOREXPERIMENT=1
+export GO111MODULE=on
+export GOFLAGS=-trimpath
+export GOGCFLAGS="-s -w"
 
 cd $(dirname "${BASH_SOURCE[0]}")/../  
 OD="$(pwd)"
